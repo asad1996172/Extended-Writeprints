@@ -1,5 +1,5 @@
 # Extended-Writeprints
-It consists of almost all the features pointed out by the mentioned paper. These features could be extracted to represent a article of a book. They can be used with Machine Learning Classifiers for Authorship Attribution as well.
+It consists of almost all the features pointed out by the research paper mentioned below in the end. These features could be extracted to represent a article or a book. They can be used with Machine Learning Classifiers for Authorship Attribution as well.
 
 |Group|Feature|
 |-----|---------|
