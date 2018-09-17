@@ -1,5 +1,5 @@
 # Extended-Writeprints
-Extended Writeprints feature extraction for text classification
+It consists of almost all the features pointed out by the mentioned paper. These features could be extracted to represent a article of a book. They can be used with Machine Learning Classifiers for Authorship Attribution as well.
 
 |Group|Feature|
 |-----|---------|
