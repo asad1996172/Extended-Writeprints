@@ -255,7 +255,7 @@ def frequencyOfSpecialCharacters(inputText):
     inputText = str(inputText).lower()  # because its case insensitive
     inputText = inputText.lower().replace(" ", "")
     specialCharacters = open(
-        cur_dir_path + "writeprintresources/writeprints_special_chars.txt", "r").readlines()
+        cur_dir_path + "special_chars.txt", "r").readlines()
     specialCharacters = [s.strip("\n") for s in specialCharacters]
     specialCharactersFrequencyDict = {}
     for c in range(0, len(specialCharacters)):
@@ -277,7 +277,7 @@ def frequencyOfSpecialCharacters(inputText):
 
 def functionWordsPercentage(inputText):
     functionWords = open(
-        cur_dir_path + "writeprintresources/functionWord.txt", "r").readlines()
+        cur_dir_path + "functionWord.txt", "r").readlines()
     functionWords = [f.strip("\n") for f in functionWords]
     words = text.text_to_word_sequence(
         inputText, filters=' !#$%&()*+,-./:;<=>?@[\\]^_{|}~\t\n"', lower=True, split=" ")
@@ -293,7 +293,7 @@ def frequencyOfPunctuationCharacters(inputText):
     inputText = str(inputText).lower()  # because its case insensitive
     inputText = inputText.lower().replace(" ", "")
     specialCharacters = open(
-        cur_dir_path + "writeprintresources/writeprints_punctuation.txt", "r").readlines()
+        cur_dir_path + "punctuation.txt", "r").readlines() # put all puchutaion marks in this file
     specialCharacters = [s.strip("\n") for s in specialCharacters]
     specialCharactersFrequencyDict = {}
     for c in range(0, len(specialCharacters)):
@@ -315,7 +315,7 @@ def frequencyOfPunctuationCharacters(inputText):
 
 def misSpellingsPercentage(inputText):
     misspelledWords = open(
-        cur_dir_path + "writeprintresources/writeprints_misspellings.txt", "r").readlines()
+        cur_dir_path + "misspellings.txt", "r").readlines() # add misspleing words
     misspelledWords = [f.strip("\n") for f in misspelledWords]
     words = text.text_to_word_sequence(
         inputText, filters=' !#$%&()*+,-./:;<=>?@[\\]^_{|}~\t\n"', lower=True, split=" ")
